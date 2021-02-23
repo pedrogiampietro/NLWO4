@@ -11,6 +11,7 @@ export default async (): Promise<any> => {
     username: config.typeorm.username,
     password: config.typeorm.password,
     database: config.typeorm.database,
+    migrations: ['src/migrations/**/*.ts'],
   });
 
   return connection.manager;

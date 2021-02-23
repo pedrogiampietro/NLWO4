@@ -16,6 +16,7 @@ const config = {
     database: process.env.TYPEORM_DATABASE,
     synchronize: true,
     logging: false,
+    migrations: ['src/migrations/**/*.ts'],
   },
 };
 
